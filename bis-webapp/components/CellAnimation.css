@@ -1,0 +1,15 @@
+.ca-card { margin-bottom:20px; }
+.ca-card .dp-card-heading { align-items:flex-start; }
+.ca-context { font-size:12px; color:var(--orange-light); margin:12px 0; }
+.ca-scene { display:block; width:100%; max-height:400px; margin:10px auto 18px; overflow:visible; }
+.ca-stream { animation:ca-flow var(--ca-speed,3s) linear infinite; }
+
+.ca-paused .ca-stream { animation-play-state:paused; }
+.ca-controls { display:flex; flex-wrap:wrap; gap:10px; }
+.ca-controls button { padding:12px 16px; border-radius:10px; border:1px solid var(--border); background:transparent; color:var(--muted); font-size:12px; }
+.ca-controls button[aria-pressed=true] { color:var(--orange-light); background:rgba(255,106,0,.07); border-color:var(--orange); }
+.ca-explanation { font-size:13px; line-height:1.9; color:var(--foreground); padding:18px 0 4px; min-height:66px; }
+@keyframes ca-flow { to { stroke-dashoffset:-152; } }
+@media(prefers-reduced-motion:reduce) { .ca-stream { animation:none; } }
+@media(max-width:650px) { .ca-card .dp-card-heading { flex-direction:column; }.ca-controls button { flex:1; padding:10px;font-size:11px; }.ca-scene text { font-size:15px; } }
+

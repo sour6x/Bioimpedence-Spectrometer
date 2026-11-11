@@ -1,0 +1,42 @@
+.bc-page { padding: 0 0 16px; }
+.bc-results-heading { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin: 0 0 22px; }
+.bc-results-heading h2 { margin: 0; font-size: 19px; font-weight: 500; letter-spacing: -.6px; }
+.bc-results-heading > span { color: var(--muted); font-size: 10px; text-align: right; }
+.bc-results-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 18px; }
+.bc-result-card { min-width: 0; padding: 23px; border: 1px solid var(--border); border-radius: 20px; background: var(--panel); }
+.bc-result-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.bc-result-top > span { font-size: 11px; color: var(--muted); }
+.bc-result-icon { display: grid; place-items: center; width: 48px; height: 48px; border: 1px solid #b8665b77; border-radius: 14px; color: var(--orange-light); background: #8b040125; }
+.bc-result-icon svg { width: 36px; height: 36px; }
+.bc-result-value { margin-top: 16px; color: var(--foreground); font-size: clamp(30px,3.4vw,44px); line-height: 1.2; letter-spacing: -1.5px; font-variant-numeric: tabular-nums; }
+.bc-result-value > span { margin-left: 9px; color: var(--muted); font-size: 14px; letter-spacing: 0; }
+.bc-result-card p { margin: 14px 0 0; color: var(--muted); font-size: 9px; line-height: 1.7; }
+.bc-result-note { margin: 18px 0 24px; color: var(--muted); font-size: 10px; line-height: 1.8; }
+.bc-progress { display: block; width: 100%; height: 5px; margin: -8px 0 20px; accent-color: var(--orange); }
+.bc-calculation { border: 1px solid var(--border); border-radius: 18px; background: var(--panel); }
+.bc-calculation > summary { padding: 20px 24px; color: var(--foreground); cursor: pointer; font-size: 12px; }
+.bc-calculation > summary:focus-visible { outline: 2px solid var(--orange-light); outline-offset: 4px; }
+.bc-calculation .cp-panel { margin: 0; border: 0; border-top: 1px solid var(--border); border-radius: 0 0 18px 18px; background: transparent; }
+.bc-calculation .cp-panel > .hero-label, .bc-calculation .cp-panel > h2 { display: none; }
+.bc-calculation .cp-actions .secondary-button { background: #8b0401; border-color: #c1695e; color: #fff3ed; }
+.bc-calculation .cp-placement { background: #8b04010b; }
+@media(max-width:1100px) { .bc-results-grid { gap: 12px; } .bc-result-card { padding: 18px; } .bc-result-top { align-items: flex-start; } .bc-result-icon { width: 38px; height: 38px; border-radius: 11px; flex-shrink: 0; } .bc-result-icon svg { width: 28px; height: 28px; } }
+@media(max-width:850px) { .bc-results-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media(max-width:420px) { .bc-results-heading h2 { font-size: 16px; } .bc-result-card { padding: 15px; } .bc-result-top { gap: 5px; } .bc-result-top > span { font-size: 10px; } .bc-result-icon { width: 30px; height: 30px; } .bc-result-icon svg { width: 24px; height: 24px; } }
+.bc-input-heading { margin: 0; padding: 22px 26px; font-size: 17px; font-weight: 500; letter-spacing: -.4px; }
+.bc-reset-row { display: flex; justify-content: flex-end; margin: 14px 0 30px; }
+.bc-reset-row .secondary-button { padding: 12px 18px; font-size: 11px; border-color: #b26e65; color: var(--orange-light); background: #8b04011a; }
+.bc-errors { margin: 0 24px 24px; padding: 12px 18px; border: 1px solid #b26e65; border-radius: 12px; color: var(--foreground); font-size: 12px; line-height: 1.8; }
+.bc-errors ul { margin: 0; padding-left: 18px; }
+.result-meaning { margin-top: 24px; padding: 24px; border: 1px solid var(--border); border-radius: 18px; background: var(--panel); }
+.result-meaning h3 { font-size: 17px; font-weight: 500; margin: 18px 0 12px; }
+.result-meaning p, .result-meaning li { color: var(--muted); font-size: 12px; line-height: 1.85; }
+.result-context { color: var(--orange-light) !important; }
+.meaning-highlight { border-left: 3px solid #bf665b; padding: 14px 18px; margin: 16px 0; background: #8b040116; border-radius: 0 10px 10px 0; }
+.meaning-highlight > span { display: block; color: var(--muted); font-size: 10px; margin-bottom: 8px; }
+.meaning-highlight > strong { font-size: 16px; font-weight: 500; }
+.result-meaning details { padding: 16px 0; border-top: 1px solid var(--border); }
+.result-meaning summary { font-size: 12px; color: var(--foreground); cursor: pointer; }
+.result-meaning a { color: var(--orange-light); text-decoration: underline; text-underline-offset: 3px; }
+.result-meaning .bis-data-table { min-width: 720px; }
+.result-meaning .bis-data-table td { vertical-align: top; font-size: 11px; line-height: 1.8; }

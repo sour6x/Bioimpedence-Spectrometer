@@ -1,0 +1,58 @@
+# Node.js and Next.js
+node_modules/
+/bis-webapp/.next/
+/bis-webapp/out/
+/bis-webapp/build/
+/bis-webapp/coverage/
+/bis-webapp/.vercel/
+/bis-webapp/next-env.d.ts
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Local environment files and private keys
+.env
+.env.*
+!.env.example
+!.env.*.example
+!.env.sample
+!.env.*.sample
+!.env.template
+!.env.*.template
+key.pem
+private.pem
+*-key.pem
+*_key.pem
+*.key
+*.p12
+*.pfx
+
+# Arduino IDE and ESP32 build output
+/bis-webapp/firmware/**/build/
+/bis-webapp/firmware/**/*.ino.bin
+/bis-webapp/firmware/**/*.ino.*.bin
+/bis-webapp/firmware/**/*.ino.elf
+/bis-webapp/firmware/**/*.ino.hex
+/bis-webapp/firmware/**/*.ino.map
+
+# KiCad backups, locks, and local settings
+/hardware/**/*-backups/
+/hardware/**/~*.lck
+/hardware/**/*.kicad_prl
+/hardware/**/*.sch-bak
+/hardware/**/*.pcb-bak
+
+# LTspice run output
+/simulation/**/*.raw
+/simulation/**/*.log
+
+# Local editor and OS files
+.idea/workspace.xml
+.idea/shelf/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini
