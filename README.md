@@ -1,8 +1,6 @@
 ## Bioimpedance Spectrometer
 
-A capstone project to develop a bioimpedance spectrometer using an AC current source, voltage measurement, and digital signal processing. The project is being developed by two teammates: one focusing on hardware and the other on software. Self-calibration and heart monitoring are project goals; they have not yet been demonstrated.
-
-> **Current scope:** bench development with resistor or RC phantom loads only. Do not connect this prototype to a person. Isolation, fault-current limits, and other requirements for human use have not been verified.
+A project to develop a bioimpedance spectrometer using an AC current source, voltage measurement, and digital signal processing. The project is being developed by two teammates: one focusing on hardware and the other on software. Self-calibration and heart monitoring are project goals; they have not yet been demonstrated.
 
 ![Bioimpedance spectrometer schematic](hardware/oled-update/Capstone-review.svg)
 
